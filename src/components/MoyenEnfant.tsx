@@ -1,7 +1,8 @@
 import { PetitEnfant } from "./PetitEnfant";
-import { GrandEnfantProps } from "./typescript/TypesProps";
+import { EnfantsProps } from "./typescript/TypesProps";
 
-export const MoyenEnfant: React.FC<GrandEnfantProps> = ({ couleur, setCouleur }) => {
+
+export const MoyenEnfant: React.FC<EnfantsProps> = ({ couleur, setCouleur }) => {
   return (
     <div>
       <div className="border bg-slate-900 my-6 p-3 rounded">

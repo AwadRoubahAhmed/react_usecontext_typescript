@@ -1,9 +1,10 @@
-import { GrandEnfantProps } from "./typescript/TypesProps";
+import { useContext } from "react";
+import { CouleurContext } from "../context/Context";
 
-export const PetitEnfant: React.FC<GrandEnfantProps> = ({
-  couleur,
-  setCouleur,
-}) => {
+export const PetitEnfant: React.FC = () => {
+  // 3. La comsommation du Context
+  const { couleur, setCouleur } = useContext(CouleurContext);
+
   //Comportement;
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setCouleur(event.target.value);

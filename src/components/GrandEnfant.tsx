@@ -1,8 +1,7 @@
 import { MoyenEnfant } from "./MoyenEnfant";
-import { GrandEnfantProps } from "./typescript/TypesProps";
+import { EnfantsProps } from "./typescript/TypesProps";
 
-
-export const GrandEnfant: React.FC<GrandEnfantProps> = ({
+export const GrandEnfant: React.FC<EnfantsProps> = ({
   couleur,
   setCouleur,
 }) => {
